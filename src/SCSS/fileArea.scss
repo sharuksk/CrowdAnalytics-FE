@@ -1,0 +1,42 @@
+#fileAreaPage {
+    #HeadOfTool{
+      background-color:#4b854b;
+    }
+    #leftComponent {
+      .MuiPaper-root.MuiPaper-elevation.MuiPaper-elevation0.MuiDrawer-paper {
+        background-color: #141414;
+        color: white;
+      }
+      ul {
+        li {
+          span {
+            font-family: "Ubuntu", sans-serif !important;
+            font-size: 13px !important;
+          }
+        }
+        padding-top: 0px !important;
+      }
+      #dashBoardIcon,
+      #devicesIcon,
+      #peopleIcon,
+      #sendIcon {
+        color: white !important;
+        font-size: 18px !important;
+      }
+      li:hover {
+        background-color: #2a2242;
+      }
+    }
+    #basic-menu {
+      ul {
+        padding-top: 0px;
+        padding-bottom: 0px;
+      }
+    }
+    #rightComponent {
+      background-color: #f5f5f5;
+      min-height: 100vh;
+      height: auto;
+    }
+  }
+  
