@@ -23,12 +23,6 @@ export default function DashBoard () {
         width: 90,
     },
     {
-        field: 'inside',
-        headerName: 'Inside',
-        type: 'number',
-        width: 90,
-    },
-    {
         field: 'total',
         headerName: 'Total',
         type: 'number',
@@ -64,9 +58,8 @@ export default function DashBoard () {
                       id: fromData[i]._id,
                       personin: fromData[i].personin,
                       personout: fromData[i].personout,
-                      inside: fromData[i].inside,
-                      total: fromData[i].total,
-                      timestamp: fromData[i].timestamp,
+                      total: fromData[i].inside,
+                      timestamp: fromData[i].time,
                     });
                   }
                 setDataRow(toData);
