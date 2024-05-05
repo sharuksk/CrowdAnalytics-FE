@@ -24,6 +24,7 @@ import {
     useNavigate,
   } from "react-router-dom";
 import DashBoard from './dashBoard'
+import Chart from './chart'
 
 
 
@@ -54,11 +55,14 @@ export default function FileArea(props) {
       <Toolbar />
       <Divider />
       <List>
-        {['DashBoard'].map((text, index) => (
+        {['DashBoard','Charts'].map((text, index) => (
           <ListItem key={text} disablePadding
             onClick={() => {
                 if (text === "DashBoard") {
                 navigate("./dashboard");
+                }
+                if (text === "Charts") {
+                  navigate("./reports");
                 }
             }}
             >
@@ -147,6 +151,7 @@ export default function FileArea(props) {
         <Typography paragraph>
             <Routes>
                 <Route path="/dashboard" element={<DashBoard/>} />
+                <Route path="/reports" element={<Chart/>} />
             </Routes>
         </Typography>
       </Box>
