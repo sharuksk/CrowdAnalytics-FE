@@ -4,6 +4,7 @@ import {linkNode} from "../nodelink";
 import axios from "axios";
 import { DataGrid, GridToolbar  } from '@mui/x-data-grid';
 import { useDemoData } from '@mui/x-data-grid-generator';
+import Chart from './chart'
 
 export default function DashBoard () {
   const [dataRow, setDataRow] = useState([]);
@@ -90,6 +91,7 @@ export default function DashBoard () {
                 checkboxSelection
                 loading={loading} slots={{ toolbar: GridToolbar }}/>
         </div>
+        <Chart/>
     </>
   )
 }
