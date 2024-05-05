@@ -115,7 +115,7 @@ const valueFormatter = (value) => `${value} vehicles`;
 export default function Chart() {
   return (
     <>
-    <h1>Vehicle Count Area Wise</h1>
+    <h1>Crowd Analytics</h1>
     <BarChart
       dataset={dataset}
       xAxis={[{ scaleType: 'band', dataKey: 'month' }]}
