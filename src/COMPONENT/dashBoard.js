@@ -5,6 +5,9 @@ import axios from "axios";
 import { DataGrid, GridToolbar  } from '@mui/x-data-grid';
 import { useDemoData } from '@mui/x-data-grid-generator';
 import Chart from './chart'
+import PieActiveArc from './PieChart';
+//import { PieChart } from 'react-minimal-pie-chart';
+
 
 export default function DashBoard () {
   const [dataRow, setDataRow] = useState([]);
@@ -78,7 +81,7 @@ export default function DashBoard () {
     
   return (
     <>
-        <div style={{ height: 400, width: '100%' }}>
+        <div className="report" style={{ height: 400, width: '100%' }}>
             <DataGrid
                 rows={rows}
                 columns={columns}
@@ -92,6 +95,16 @@ export default function DashBoard () {
                 loading={loading} slots={{ toolbar: GridToolbar }}/>
         </div>
         <Chart/>
+        <div className="pieChart">
+        <PieActiveArc/>
+        </div>
+        {/* <PieChart
+        data={[
+          { title: 'One', value: 1, color: '#E38627' },
+          { title: 'Two', value: 1, color: '#C13C37' },
+          { title: 'Three', value: 1, color: '#6A2135' },
+        ]}
+      />; */}
     </>
   )
 }
