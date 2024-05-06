@@ -5,7 +5,7 @@ import axios from "axios";
 import { DataGrid, GridToolbar  } from '@mui/x-data-grid';
 import { useDemoData } from '@mui/x-data-grid-generator';
 import Chart from './chart'
-import PieActiveArc from './PieChart';
+import PieActiveArc from './pieChart';
 //import { PieChart } from 'react-minimal-pie-chart';
 
 
